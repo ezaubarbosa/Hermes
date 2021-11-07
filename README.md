@@ -46,15 +46,15 @@ Realizar o clone do repositório, compilar o projeto no Delphi (preferencialment
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### **Website**  ([Delphi Community Rio 10.3](https://www.embarcadero.com/br/products/delphi/starter)
+#### **Website**  ([Delphi Community Rio 10.3](https://www.embarcadero.com/br/products/delphi/starter))
 
-> Como não exigido a persistência dos dados em uma base de dados física, foi utilizado o ClientDataSet para criação de tabelas em memória, bem como, o uso de lookup field para o relacionamento entre as tabelas. 
+> Como a persistência dos dados em um database físico não era necessária, foi utilizado o ClientDataSet para criação de tabelas em memória, bem como, o uso de lookup field para o relacionamento entre as tabelas. 
 
 ---
 
 ## 👨‍💻 Melhorias
 
-Implementação do padrão de projeto MVC, com o Model ficando a cargo do DataModule, View para os formulários, além de uma camada intermediária de controller. 
+Implementação do padrão de projeto MVC, com o Model ficando a cargo do DataModule, View para os formulários, além de uma camada intermediária (controller). 
 
 ---
 
