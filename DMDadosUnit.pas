@@ -272,7 +272,7 @@ end;
 function TDMDados.NovoDB(FValue: TClientDataSet): Boolean;
 begin
   try
-    FValue.Insert;
+    FValue.Append;
 
     Result := True;
   except on E:Exception do
