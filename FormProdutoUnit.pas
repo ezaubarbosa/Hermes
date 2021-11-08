@@ -85,7 +85,7 @@ end;
 procedure TFormProduto.BtnInserirClick(Sender: TObject);
 begin
   // Desativar o Filtered
-  DMDados.AbrirDB(DMDados.CDSProduto);
+  DMDados.CDSProduto.Filtered := False;
 
   // Novo Registro
   if DMDados.NovoDB(DMDados.CDSProduto) then AbrirCad;

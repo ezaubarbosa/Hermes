@@ -40,7 +40,7 @@ type
     procedure SpdFinalizarVendaClick(Sender: TObject);
   private
     { Private declarations }
-    procedure BuscarCliente(FValue:String);
+    procedure BuscarCliente;
     procedure AbrirCad;
     procedure CancelarVenda;
   public
@@ -128,7 +128,7 @@ begin
   end;
 end;
 
-procedure TFormVenda.BuscarCliente(FValue:String);
+procedure TFormVenda.BuscarCliente;
 begin
   DMDados.CDSVenda.FieldByName('cliente_cpf').AsString := EdtClienteCpf.Text;
 
@@ -161,7 +161,7 @@ end;
 
 procedure TFormVenda.EdtClienteCpfExit(Sender: TObject);
 begin
-  BuscarCliente(EdtClienteCpf.Text);
+  BuscarCliente;
 end;
 
 procedure TFormVenda.FormClose(Sender: TObject; var Action: TCloseAction);
