@@ -92,8 +92,6 @@ begin
 end;
 
 procedure TDMDados.CDSProdutoBeforeDelete(DataSet: TDataSet);
-var
-  FCDS:TClientDataSet;
 begin
   if PesquisarStr(CDSVendaItem,CDSProduto.FieldByName('codigobarra').AsString,
     'produto_codigobarra','=') then

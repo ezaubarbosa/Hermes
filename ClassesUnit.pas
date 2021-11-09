@@ -71,6 +71,10 @@ begin
       else
         Result := False;
     end;
+    else
+    begin
+      Result := False;
+    end;
   end;
 
   FreeAndNil(Self);
